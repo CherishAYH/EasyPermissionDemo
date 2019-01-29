@@ -13,7 +13,7 @@ public interface RequestCallBack {
     void granted();
 
     /**
-     * 取消授权
+     * 拒绝授权
      */
     void denied();
 }

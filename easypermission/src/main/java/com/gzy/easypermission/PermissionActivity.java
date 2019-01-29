@@ -61,8 +61,8 @@ public class PermissionActivity extends Activity {
     }
 
     private void showGoAppSettingDialog() {
-        new AlertDialog.Builder(this).setTitle("PermissionTest")
-                .setMessage("获取相关权限失败，将导致部分功能无法正常使用，需要到设置页面手动授权")
+        new AlertDialog.Builder(this, R.style.Theme_AppCompat_Light_Dialog).setTitle("权限申请")
+                .setMessage("获取相关权限失败，将导致部分功能无法正常使用，需要到设置页面手动授权。")
                 .setPositiveButton("去授权", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
